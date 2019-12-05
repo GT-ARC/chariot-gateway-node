@@ -1,0 +1,44 @@
+<beans>
+              <bean name="GatewayNode" class="de.dailab.jiactng.agentcore.SimpleAgentNode">
+                            <property name="agentNodeBeans">
+                                          <list>
+                                                         <ref bean="StaticGatewayBroker" />
+                                                         <ref bean="IDirectory"/>
+                                          </list>
+                            </property>
+              </bean>
+ 
+
+              <bean name="StaticGatewayBroker"
+                            class="de.dailab.jiactng.agentcore.comm.broker.ActiveMQBroker"
+                            singleton="true"
+                            lazy-init="true">
+
+                            <property name="persistent" value="false" />
+                            <property name="connectors">
+                                          <set>
+                                                         <ref bean="StaticGatewayConnector" />
+                                          </set>
+                            </property>
+              </bean>
+ 
+              <bean name="StaticGatewayConnector"
+              class="de.dailab.jiactng.agentcore.comm.broker.ActiveMQTransportConnector"
+                            singleton="false">
+                            <property name="transportURI" value="tcp://0.0.0.0:45678" />
+              </bean>
+ 
+              <bean name="IDirectory" class="de.dailab.jiactng.agentcore.directory.DirectoryAgentNodeBean" singleton="false">
+                            <property name="messageTransport">
+                                          <ref bean="StandardJMSMessageTransport" />
+                            </property>
+              </bean>
+ 
+              <bean name="StandardJMSMessageTransport" class="de.dailab.jiactng.agentcore.comm.transport.jms.JMSMessageTransport"
+                            singleton="false">
+                            <property name="connectionFactory" ref="StandardJMSConnectionFactory" />
+              </bean>
+ 
+              <bean name="StandardJMSConnectionFactory" class="de.dailab.jiactng.agentcore.comm.broker.ConnectionFactoryProxy"
+                            singleton="false" />
+</beans>
