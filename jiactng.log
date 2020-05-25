@@ -1,6 +1,160 @@
-2019-12-05 15:50:35,460 ERROR [org.apache.activemq.broker.TransportConnector] - Could not accept connection : java.lang.InterruptedException
-2019-12-05 15:50:35,461 ERROR [n-1390925f450.IDirectory.jms] - Sending of Message to address 'group:df@dfgroup' through JMS failed!
-javax.jms.JMSException: peer (vm://n-1390925f450StaticGatewayBroker#1) stopped.
+2020-05-25 10:31:47,360 WARN [org.apache.activemq.network.DemandForwardingBridgeSupport] - Network connection between vm://n-9cf3d7e3a6001StaticGatewayBroker#850 and tcp:///10.1.1.14:49643@45678 shutdown due to a remote error: java.io.EOFException
+2020-05-25 10:31:51,408 WARN [n-9cf3d7e3a6001.IDirectory] - Forget nodes due to missing alive message:
+
+2020-05-25 10:31:51,409 WARN [n-9cf3d7e3a6001.IDirectory] - 	df@n-111bcec7dbc
+2020-05-25 10:31:51,409 WARN [n-9cf3d7e3a6001.IDirectory] - 	df@n-10c454bc0ce
+2020-05-25 10:32:36,408 WARN [n-9cf3d7e3a6001.IDirectory] - Forget nodes due to missing alive message:
+
+2020-05-25 10:32:36,409 WARN [n-9cf3d7e3a6001.IDirectory] - 	df@n-119f688ae91
+2020-05-25 10:35:02,940 WARN [org.apache.activemq.network.DemandForwardingBridgeSupport] - Network connection between vm://n-9cf3d7e3a6001StaticGatewayBroker#854 and tcp:///10.1.1.14:49714@45678 shutdown due to a remote error: java.io.EOFException
+2020-05-25 10:35:51,409 WARN [n-9cf3d7e3a6001.IDirectory] - Forget nodes due to missing alive message:
+
+2020-05-25 10:35:51,409 WARN [n-9cf3d7e3a6001.IDirectory] - 	df@n-14755e45cf0
+2020-05-25 10:36:18,312 WARN [org.apache.activemq.network.DemandForwardingBridgeSupport] - Network connection between vm://n-9cf3d7e3a6001StaticGatewayBroker#858 and tcp:///10.1.1.14:49744@45678 shutdown due to a remote error: java.io.EOFException
+2020-05-25 10:36:23,527 WARN [org.apache.activemq.network.DemandForwardingBridgeSupport] - Network connection between vm://n-9cf3d7e3a6001StaticGatewayBroker#862 and tcp:///10.1.1.14:49749@45678 shutdown due to a remote error: java.io.EOFException
+2020-05-25 10:39:05,483 WARN [org.apache.activemq.network.DemandForwardingBridgeSupport] - Network connection between vm://n-9cf3d7e3a6001StaticGatewayBroker#866 and tcp:///10.1.1.14:49757@45678 shutdown due to a remote error: java.io.EOFException
+2020-05-25 11:00:21,910 WARN [org.apache.activemq.network.DemandForwardingBridgeSupport] - Network connection between vm://n-9cf3d7e3a6001StaticGatewayBroker#870 and tcp:///10.1.1.14:49878@45678 shutdown due to a remote error: java.io.EOFException
+2020-05-25 11:01:06,418 WARN [n-9cf3d7e3a6001.IDirectory] - Forget nodes due to missing alive message:
+
+2020-05-25 11:01:06,418 WARN [n-9cf3d7e3a6001.IDirectory] - 	df@n-2a8acea63a1
+2020-05-25 12:25:40,241 WARN [org.apache.activemq.network.DemandForwardingBridgeSupport] - Network connection between vm://n-9cf3d7e3a6001StaticGatewayBroker#882 and tcp:///10.1.1.7:61523@45678 shutdown due to a remote error: java.net.SocketException: Connection reset
+2020-05-25 12:26:06,449 WARN [n-9cf3d7e3a6001.IDirectory] - Forget nodes due to missing alive message:
+
+2020-05-25 12:26:06,449 WARN [n-9cf3d7e3a6001.IDirectory] - 	df@n-c9686e191d68
+2020-05-25 12:32:10,352 WARN [n-9cf3d7e3a6001.IDirectory] - Measured interval of receiving alive message from df@n-c94da313bdf9: 30591ms instead of 15000ms
+2020-05-25 12:32:19,570 WARN [org.apache.activemq.network.DemandForwardingBridgeSupport] - Network connection between vm://n-9cf3d7e3a6001StaticGatewayBroker#886 and tcp:///10.1.1.7:61811@45678 shutdown due to a remote error: java.net.SocketException: Connection reset
+2020-05-25 12:32:19,571 ERROR [org.apache.activemq.network.DemandForwardingBridgeSupport] - Exception: org.apache.activemq.transport.InactivityIOException: Cannot send, channel has already failed: tcp://10.1.1.7:61811 on duplex forward of: ActiveMQObjectMessage {commandId = 161, responseRequired = true, messageId = ID:dai251-61810-1590402346804-4:1:1:1:27, originalDestination = null, originalTransactionId = null, producerId = n-9cf3d7e3a6001StaticGatewayBroker->n-c9a5d9e286f4ChariotStaticGatewayBroker-40595-1590147451518-447:2:1:1, destination = topic://df@dfgroup, transactionId = null, expiration = 0, timestamp = 1590402725492, arrival = 0, brokerInTime = 1590402735948, brokerOutTime = 1590402735948, correlationId = null, replyTo = null, persistent = true, type = null, priority = 4, groupID = null, groupSequence = 0, targetConsumerId = null, compressed = false, userID = null, content = null, marshalledProperties = org.apache.activemq.util.ByteSequence@40ef9f08, dataStructure = null, redeliveryCounter = 0, size = 1164, properties = {JiacTNGProtocolID=df:alive, JiacTNGSenderAddress=msgbox:df@n-c9a5d9e286f4, UUID=n-c9a5d9e286f4, JiacTNGGroupAddress=df@dfgroup}, readOnlyProperties = false, readOnlyBody = false, droppable = false, jmsXGroupFirstForConsumer = false}
+2020-05-25 12:32:19,571 WARN [org.apache.activemq.network.DemandForwardingBridgeSupport] - Caught an exception processing local command
+java.net.SocketException: Broken pipe (Write failed)
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:111)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:155)
+	at org.apache.activemq.transport.tcp.TcpBufferedOutputStream.write(TcpBufferedOutputStream.java:96)
+	at java.io.DataOutputStream.write(DataOutputStream.java:107)
+	at org.apache.activemq.openwire.v11.BaseDataStreamMarshaller.tightMarshalByteSequence2(BaseDataStreamMarshaller.java:431)
+	at org.apache.activemq.openwire.v11.MessageMarshaller.tightMarshal2(MessageMarshaller.java:182)
+	at org.apache.activemq.openwire.v11.ActiveMQMessageMarshaller.tightMarshal2(ActiveMQMessageMarshaller.java:89)
+	at org.apache.activemq.openwire.v11.ActiveMQObjectMessageMarshaller.tightMarshal2(ActiveMQObjectMessageMarshaller.java:89)
+	at org.apache.activemq.openwire.OpenWireFormat.marshal(OpenWireFormat.java:234)
+	at org.apache.activemq.transport.tcp.TcpTransport.oneway(TcpTransport.java:175)
+	at org.apache.activemq.transport.AbstractInactivityMonitor.doOnewaySend(AbstractInactivityMonitor.java:334)
+	at org.apache.activemq.transport.AbstractInactivityMonitor.oneway(AbstractInactivityMonitor.java:316)
+	at org.apache.activemq.transport.TransportFilter.oneway(TransportFilter.java:85)
+	at org.apache.activemq.transport.WireFormatNegotiator.oneway(WireFormatNegotiator.java:104)
+	at org.apache.activemq.transport.MutexTransport.oneway(MutexTransport.java:68)
+	at org.apache.activemq.transport.ResponseCorrelator.asyncRequest(ResponseCorrelator.java:81)
+	at org.apache.activemq.network.DemandForwardingBridgeSupport.serviceLocalCommand(DemandForwardingBridgeSupport.java:1006)
+	at org.apache.activemq.network.DemandForwardingBridgeSupport$2.onCommand(DemandForwardingBridgeSupport.java:207)
+	at org.apache.activemq.transport.ResponseCorrelator.onCommand(ResponseCorrelator.java:116)
+	at org.apache.activemq.transport.MutexTransport.onCommand(MutexTransport.java:50)
+	at org.apache.activemq.transport.vm.VMTransport.iterate(VMTransport.java:270)
+	at org.apache.activemq.thread.PooledTaskRunner.runTask(PooledTaskRunner.java:133)
+	at org.apache.activemq.thread.PooledTaskRunner$1.run(PooledTaskRunner.java:48)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020-05-25 12:32:51,451 WARN [n-9cf3d7e3a6001.IDirectory] - Forget nodes due to missing alive message:
+
+2020-05-25 12:32:51,454 WARN [n-9cf3d7e3a6001.IDirectory] - 	df@n-c9a5d9e286f4
+2020-05-25 14:49:53,061 WARN [n-9cf3d7e3a6001.IDirectory] - Measured interval of receiving alive message from df@n-c94b519b70ed: 30055ms instead of 15000ms
+2020-05-25 14:49:53,135 WARN [n-9cf3d7e3a6001.IDirectory] - Measured interval of receiving alive message from df@n-c94da313bdf9: 27993ms instead of 15000ms
+2020-05-25 14:49:53,135 WARN [n-9cf3d7e3a6001.IDirectory] - Measured interval of receiving alive message from df@n-ca01be36f12c: 27644ms instead of 15000ms
+2020-05-25 15:12:42,824 WARN [org.apache.activemq.network.DemandForwardingBridgeSupport] - Network connection between vm://n-9cf3d7e3a6001StaticGatewayBroker#894 and tcp:///10.1.1.19:50897@45678 shutdown due to a remote error: java.net.SocketException: Connection reset
+2020-05-25 15:13:06,519 WARN [n-9cf3d7e3a6001.IDirectory] - Forget nodes due to missing alive message:
+
+2020-05-25 15:13:06,520 WARN [n-9cf3d7e3a6001.IDirectory] - 	df@n-35814856b8e0
+2020-05-25 15:20:50,053 ERROR [org.apache.activemq.thread.TaskRunnerFactory] - Error in thread 'ActiveMQ VMTransport: vm://n-9cf3d7e3a6001StaticGatewayBroker#1-2723'
+org.apache.activemq.broker.BrokerStoppedException: Broker BrokerService[n-9cf3d7e3a6001StaticGatewayBroker] is being stopped
+	at org.apache.activemq.broker.TransportConnection$1.onCommand(TransportConnection.java:193)
+	at org.apache.activemq.transport.ResponseCorrelator.onCommand(ResponseCorrelator.java:116)
+	at org.apache.activemq.transport.MutexTransport.onCommand(MutexTransport.java:50)
+	at org.apache.activemq.transport.vm.VMTransport.iterate(VMTransport.java:270)
+	at org.apache.activemq.thread.PooledTaskRunner.runTask(PooledTaskRunner.java:133)
+	at org.apache.activemq.thread.PooledTaskRunner$1.run(PooledTaskRunner.java:48)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020-05-25 15:20:50,270 ERROR [org.apache.activemq.broker.TransportConnector] - Could not accept connection : java.lang.InterruptedException
+2020-05-25 15:20:50,271 ERROR [org.apache.activemq.thread.TaskRunnerFactory] - Error in thread 'ActiveMQ VMTransport: vm://n-9cf3d7e3a6001StaticGatewayBroker#3-1250'
+org.apache.activemq.broker.BrokerStoppedException: Broker BrokerService[n-9cf3d7e3a6001StaticGatewayBroker] is being stopped
+	at org.apache.activemq.broker.TransportConnection$1.onCommand(TransportConnection.java:193)
+	at org.apache.activemq.transport.ResponseCorrelator.onCommand(ResponseCorrelator.java:116)
+	at org.apache.activemq.transport.MutexTransport.onCommand(MutexTransport.java:50)
+	at org.apache.activemq.transport.vm.VMTransport.iterate(VMTransport.java:270)
+	at org.apache.activemq.thread.PooledTaskRunner.runTask(PooledTaskRunner.java:133)
+	at org.apache.activemq.thread.PooledTaskRunner$1.run(PooledTaskRunner.java:48)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020-05-25 15:20:50,292 WARN [org.apache.activemq.broker.TransportConnection.Transport] - Transport Connection to: vm://n-9cf3d7e3a6001StaticGatewayBroker#2 failed: org.apache.activemq.transport.TransportDisposedIOException: peer (vm://n-9cf3d7e3a6001StaticGatewayBroker#2) stopped.
+2020-05-25 15:20:50,293 WARN [org.apache.activemq.broker.TransportConnection.Transport] - Transport Connection to: vm://n-9cf3d7e3a6001StaticGatewayBroker#4 failed: org.apache.activemq.transport.TransportDisposedIOException: peer (vm://n-9cf3d7e3a6001StaticGatewayBroker#4) stopped.
+2020-05-25 15:20:50,314 ERROR [org.apache.activemq.thread.TaskRunnerFactory] - Error in thread 'ActiveMQ VMTransport: vm://n-9cf3d7e3a6001StaticGatewayBroker#7-1991'
+org.apache.activemq.broker.BrokerStoppedException: Broker BrokerService[n-9cf3d7e3a6001StaticGatewayBroker] is being stopped
+	at org.apache.activemq.broker.TransportConnection$1.onCommand(TransportConnection.java:193)
+	at org.apache.activemq.transport.ResponseCorrelator.onCommand(ResponseCorrelator.java:116)
+	at org.apache.activemq.transport.MutexTransport.onCommand(MutexTransport.java:50)
+	at org.apache.activemq.transport.vm.VMTransport.iterate(VMTransport.java:270)
+	at org.apache.activemq.thread.PooledTaskRunner.runTask(PooledTaskRunner.java:133)
+	at org.apache.activemq.thread.PooledTaskRunner$1.run(PooledTaskRunner.java:48)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020-05-25 15:20:50,330 WARN [org.apache.activemq.broker.TransportConnection.Transport] - Transport Connection to: vm://n-9cf3d7e3a6001StaticGatewayBroker#6 failed: org.apache.activemq.transport.TransportDisposedIOException: peer (vm://n-9cf3d7e3a6001StaticGatewayBroker#6) stopped.
+2020-05-25 15:20:50,330 WARN [org.apache.activemq.broker.TransportConnection.Transport] - Transport Connection to: vm://n-9cf3d7e3a6001StaticGatewayBroker#8 failed: org.apache.activemq.transport.TransportDisposedIOException: peer (vm://n-9cf3d7e3a6001StaticGatewayBroker#8) stopped.
+2020-05-25 15:20:50,365 ERROR [org.apache.activemq.thread.TaskRunnerFactory] - Error in thread 'ActiveMQ VMTransport: vm://n-9cf3d7e3a6001StaticGatewayBroker#11-2499'
+org.apache.activemq.broker.BrokerStoppedException: Broker BrokerService[n-9cf3d7e3a6001StaticGatewayBroker] is being stopped
+	at org.apache.activemq.broker.TransportConnection$1.onCommand(TransportConnection.java:193)
+	at org.apache.activemq.transport.ResponseCorrelator.onCommand(ResponseCorrelator.java:116)
+	at org.apache.activemq.transport.MutexTransport.onCommand(MutexTransport.java:50)
+	at org.apache.activemq.transport.vm.VMTransport.iterate(VMTransport.java:270)
+	at org.apache.activemq.thread.PooledTaskRunner.runTask(PooledTaskRunner.java:133)
+	at org.apache.activemq.thread.PooledTaskRunner$1.run(PooledTaskRunner.java:48)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020-05-25 15:20:50,374 WARN [org.apache.activemq.broker.TransportConnection.Transport] - Transport Connection to: vm://n-9cf3d7e3a6001StaticGatewayBroker#10 failed: org.apache.activemq.transport.TransportDisposedIOException: peer (vm://n-9cf3d7e3a6001StaticGatewayBroker#10) stopped.
+2020-05-25 15:20:50,381 WARN [org.apache.activemq.broker.TransportConnection.Transport] - Transport Connection to: vm://n-9cf3d7e3a6001StaticGatewayBroker#12 failed: org.apache.activemq.transport.TransportDisposedIOException: peer (vm://n-9cf3d7e3a6001StaticGatewayBroker#12) stopped.
+2020-05-25 15:20:50,429 ERROR [org.apache.activemq.thread.TaskRunnerFactory] - Error in thread 'ActiveMQ VMTransport: vm://n-9cf3d7e3a6001StaticGatewayBroker#875-134'
+org.apache.activemq.broker.BrokerStoppedException: Broker BrokerService[n-9cf3d7e3a6001StaticGatewayBroker] is being stopped
+	at org.apache.activemq.broker.TransportConnection$1.onCommand(TransportConnection.java:193)
+	at org.apache.activemq.transport.ResponseCorrelator.onCommand(ResponseCorrelator.java:116)
+	at org.apache.activemq.transport.MutexTransport.onCommand(MutexTransport.java:50)
+	at org.apache.activemq.transport.vm.VMTransport.iterate(VMTransport.java:270)
+	at org.apache.activemq.thread.PooledTaskRunner.runTask(PooledTaskRunner.java:133)
+	at org.apache.activemq.thread.PooledTaskRunner$1.run(PooledTaskRunner.java:48)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020-05-25 15:20:50,430 WARN [org.apache.activemq.broker.TransportConnection.Transport] - Transport Connection to: vm://n-9cf3d7e3a6001StaticGatewayBroker#874 failed: org.apache.activemq.transport.TransportDisposedIOException: peer (vm://n-9cf3d7e3a6001StaticGatewayBroker#874) stopped.
+2020-05-25 15:20:50,430 WARN [org.apache.activemq.broker.TransportConnection.Transport] - Transport Connection to: vm://n-9cf3d7e3a6001StaticGatewayBroker#876 failed: org.apache.activemq.transport.TransportDisposedIOException: peer (vm://n-9cf3d7e3a6001StaticGatewayBroker#876) stopped.
+2020-05-25 15:20:50,454 ERROR [org.apache.activemq.thread.TaskRunnerFactory] - Error in thread 'ActiveMQ VMTransport: vm://n-9cf3d7e3a6001StaticGatewayBroker#879-130'
+org.apache.activemq.broker.BrokerStoppedException: Broker BrokerService[n-9cf3d7e3a6001StaticGatewayBroker] is being stopped
+	at org.apache.activemq.broker.TransportConnection$1.onCommand(TransportConnection.java:193)
+	at org.apache.activemq.transport.ResponseCorrelator.onCommand(ResponseCorrelator.java:116)
+	at org.apache.activemq.transport.MutexTransport.onCommand(MutexTransport.java:50)
+	at org.apache.activemq.transport.vm.VMTransport.iterate(VMTransport.java:270)
+	at org.apache.activemq.thread.PooledTaskRunner.runTask(PooledTaskRunner.java:133)
+	at org.apache.activemq.thread.PooledTaskRunner$1.run(PooledTaskRunner.java:48)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020-05-25 15:20:50,477 WARN [org.apache.activemq.broker.TransportConnection.Transport] - Transport Connection to: vm://n-9cf3d7e3a6001StaticGatewayBroker#878 failed: org.apache.activemq.transport.TransportDisposedIOException: peer (vm://n-9cf3d7e3a6001StaticGatewayBroker#878) stopped.
+2020-05-25 15:20:50,480 WARN [org.apache.activemq.broker.TransportConnection.Transport] - Transport Connection to: vm://n-9cf3d7e3a6001StaticGatewayBroker#880 failed: org.apache.activemq.transport.TransportDisposedIOException: peer (vm://n-9cf3d7e3a6001StaticGatewayBroker#880) stopped.
+2020-05-25 15:20:50,557 ERROR [org.apache.activemq.thread.TaskRunnerFactory] - Error in thread 'ActiveMQ VMTransport: vm://n-9cf3d7e3a6001StaticGatewayBroker#891-130'
+org.apache.activemq.broker.BrokerStoppedException: Broker BrokerService[n-9cf3d7e3a6001StaticGatewayBroker] is being stopped
+	at org.apache.activemq.broker.TransportConnection$1.onCommand(TransportConnection.java:193)
+	at org.apache.activemq.transport.ResponseCorrelator.onCommand(ResponseCorrelator.java:116)
+	at org.apache.activemq.transport.MutexTransport.onCommand(MutexTransport.java:50)
+	at org.apache.activemq.transport.vm.VMTransport.iterate(VMTransport.java:270)
+	at org.apache.activemq.thread.PooledTaskRunner.runTask(PooledTaskRunner.java:133)
+	at org.apache.activemq.thread.PooledTaskRunner$1.run(PooledTaskRunner.java:48)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020-05-25 15:20:50,569 WARN [org.apache.activemq.broker.TransportConnection.Transport] - Transport Connection to: vm://n-9cf3d7e3a6001StaticGatewayBroker#890 failed: org.apache.activemq.transport.TransportDisposedIOException: peer (vm://n-9cf3d7e3a6001StaticGatewayBroker#890) stopped.
+2020-05-25 15:20:50,570 WARN [org.apache.activemq.broker.TransportConnection.Transport] - Transport Connection to: vm://n-9cf3d7e3a6001StaticGatewayBroker#892 failed: org.apache.activemq.transport.TransportDisposedIOException: peer (vm://n-9cf3d7e3a6001StaticGatewayBroker#892) stopped.
+2020-05-25 15:20:50,579 ERROR [n-9cf3d7e3a6001.IDirectory.jms] - Sending of Message to address 'group:df@dfgroup' through JMS failed!
+javax.jms.JMSException: peer (vm://n-9cf3d7e3a6001StaticGatewayBroker#1) stopped.
 	at org.apache.activemq.util.JMSExceptionSupport.create(JMSExceptionSupport.java:54)
 	at org.apache.activemq.ActiveMQConnection.syncSendPacket(ActiveMQConnection.java:1398)
 	at org.apache.activemq.ActiveMQConnection.syncSendPacket(ActiveMQConnection.java:1324)
@@ -17,7 +171,7 @@ javax.jms.JMSException: peer (vm://n-1390925f450StaticGatewayBroker#1) stopped.
 	at de.dailab.jiactng.agentcore.lifecycle.AbstractLifecycle.stop(AbstractLifecycle.java:181)
 	at de.dailab.jiactng.agentcore.SimpleAgentNode.shutdown(SimpleAgentNode.java:819)
 	at de.dailab.jiactng.agentcore.SimpleAgentNode$1.run(SimpleAgentNode.java:144)
-Caused by: org.apache.activemq.transport.TransportDisposedIOException: peer (vm://n-1390925f450StaticGatewayBroker#1) stopped.
+Caused by: org.apache.activemq.transport.TransportDisposedIOException: peer (vm://n-9cf3d7e3a6001StaticGatewayBroker#1) stopped.
 	at org.apache.activemq.transport.vm.VMTransport.stop(VMTransport.java:229)
 	at org.apache.activemq.transport.TransportFilter.stop(TransportFilter.java:65)
 	at org.apache.activemq.transport.TransportFilter.stop(TransportFilter.java:65)
@@ -27,19 +181,8 @@ Caused by: org.apache.activemq.transport.TransportDisposedIOException: peer (vm:
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
-2019-12-05 15:50:35,460 ERROR [org.apache.activemq.thread.TaskRunnerFactory] - Error in thread 'ActiveMQ VMTransport: vm://n-1390925f450StaticGatewayBroker#1-1'
-org.apache.activemq.broker.BrokerStoppedException: Broker BrokerService[n-1390925f450StaticGatewayBroker] is being stopped
-	at org.apache.activemq.broker.TransportConnection$1.onCommand(TransportConnection.java:193)
-	at org.apache.activemq.transport.ResponseCorrelator.onCommand(ResponseCorrelator.java:116)
-	at org.apache.activemq.transport.MutexTransport.onCommand(MutexTransport.java:50)
-	at org.apache.activemq.transport.vm.VMTransport.iterate(VMTransport.java:270)
-	at org.apache.activemq.thread.PooledTaskRunner.runTask(PooledTaskRunner.java:133)
-	at org.apache.activemq.thread.PooledTaskRunner$1.run(PooledTaskRunner.java:48)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-2019-12-05 15:50:35,482 ERROR [n-1390925f450.IDirectory] - sendMessage failed. Message:
-[Headers: {JiacTNGSenderAddress=>msgbox:df@n-1390925f450;JiacTNGProtocolID=>df:bye;JiacTNGGroupAddress=>df@dfgroup;UUID=>n-1390925f450}, Payload: null, Sender: msgbox:df@n-1390925f450]
+2020-05-25 15:20:50,584 ERROR [n-9cf3d7e3a6001.IDirectory] - sendMessage failed. Message:
+[Headers: {JiacTNGSenderAddress=>msgbox:df@n-9cf3d7e3a6001;JiacTNGProtocolID=>df:bye;JiacTNGGroupAddress=>df@dfgroup;UUID=>n-9cf3d7e3a6001}, Payload: null, Sender: msgbox:df@n-9cf3d7e3a6001]
 de.dailab.jiactng.agentcore.comm.CommunicationException: error while sending message
 	at de.dailab.jiactng.agentcore.comm.transport.jms.JMSMessageTransport.send(JMSMessageTransport.java:221)
 	at de.dailab.jiactng.agentcore.directory.DirectoryAgentNodeBean.sendMessage(DirectoryAgentNodeBean.java:1472)
@@ -49,7 +192,7 @@ de.dailab.jiactng.agentcore.comm.CommunicationException: error while sending mes
 	at de.dailab.jiactng.agentcore.lifecycle.AbstractLifecycle.stop(AbstractLifecycle.java:181)
 	at de.dailab.jiactng.agentcore.SimpleAgentNode.shutdown(SimpleAgentNode.java:819)
 	at de.dailab.jiactng.agentcore.SimpleAgentNode$1.run(SimpleAgentNode.java:144)
-Caused by: javax.jms.JMSException: peer (vm://n-1390925f450StaticGatewayBroker#1) stopped.
+Caused by: javax.jms.JMSException: peer (vm://n-9cf3d7e3a6001StaticGatewayBroker#1) stopped.
 	at org.apache.activemq.util.JMSExceptionSupport.create(JMSExceptionSupport.java:54)
 	at org.apache.activemq.ActiveMQConnection.syncSendPacket(ActiveMQConnection.java:1398)
 	at org.apache.activemq.ActiveMQConnection.syncSendPacket(ActiveMQConnection.java:1324)
@@ -60,7 +203,7 @@ Caused by: javax.jms.JMSException: peer (vm://n-1390925f450StaticGatewayBroker#1
 	at de.dailab.jiactng.agentcore.comm.transport.jms.JMSSender.send(JMSSender.java:43)
 	at de.dailab.jiactng.agentcore.comm.transport.jms.JMSMessageTransport.send(JMSMessageTransport.java:215)
 	... 7 more
-Caused by: org.apache.activemq.transport.TransportDisposedIOException: peer (vm://n-1390925f450StaticGatewayBroker#1) stopped.
+Caused by: org.apache.activemq.transport.TransportDisposedIOException: peer (vm://n-9cf3d7e3a6001StaticGatewayBroker#1) stopped.
 	at org.apache.activemq.transport.vm.VMTransport.stop(VMTransport.java:229)
 	at org.apache.activemq.transport.TransportFilter.stop(TransportFilter.java:65)
 	at org.apache.activemq.transport.TransportFilter.stop(TransportFilter.java:65)
@@ -70,8 +213,8 @@ Caused by: org.apache.activemq.transport.TransportDisposedIOException: peer (vm:
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
-2019-12-05 15:50:35,490 WARN [n-1390925f450.IDirectory.jms] - could not stop JMS connection 
-org.apache.activemq.ConnectionFailedException: The JMS connection has failed: peer (vm://n-1390925f450StaticGatewayBroker#1) stopped.
+2020-05-25 15:20:50,585 WARN [n-9cf3d7e3a6001.IDirectory.jms] - could not stop JMS connection 
+org.apache.activemq.ConnectionFailedException: The JMS connection has failed: peer (vm://n-9cf3d7e3a6001StaticGatewayBroker#1) stopped.
 	at org.apache.activemq.ActiveMQConnection.checkClosedOrFailed(ActiveMQConnection.java:1471)
 	at org.apache.activemq.ActiveMQConnection.doStop(ActiveMQConnection.java:575)
 	at org.apache.activemq.ActiveMQConnection.stop(ActiveMQConnection.java:564)
@@ -82,7 +225,7 @@ org.apache.activemq.ConnectionFailedException: The JMS connection has failed: pe
 	at de.dailab.jiactng.agentcore.lifecycle.AbstractLifecycle.cleanup(AbstractLifecycle.java:221)
 	at de.dailab.jiactng.agentcore.SimpleAgentNode.shutdown(SimpleAgentNode.java:820)
 	at de.dailab.jiactng.agentcore.SimpleAgentNode$1.run(SimpleAgentNode.java:144)
-Caused by: org.apache.activemq.transport.TransportDisposedIOException: peer (vm://n-1390925f450StaticGatewayBroker#1) stopped.
+Caused by: org.apache.activemq.transport.TransportDisposedIOException: peer (vm://n-9cf3d7e3a6001StaticGatewayBroker#1) stopped.
 	at org.apache.activemq.transport.vm.VMTransport.stop(VMTransport.java:229)
 	at org.apache.activemq.transport.TransportFilter.stop(TransportFilter.java:65)
 	at org.apache.activemq.transport.TransportFilter.stop(TransportFilter.java:65)
@@ -92,3 +235,81 @@ Caused by: org.apache.activemq.transport.TransportDisposedIOException: peer (vm:
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
+2020-05-25 15:20:50,625 WARN [org.apache.activemq.broker.TransportConnection] - Failed to remove consumer: n-9cf3d7e3a6001StaticGatewayBroker->n-9cf3f560fc0aeChariotStaticGatewayBroker-40595-1590147451518-5:1:1:3
+org.apache.activemq.broker.BrokerStoppedException: Broker has been stopped: org.apache.activemq.broker.BrokerService$6@63ddaf18
+	at org.apache.activemq.broker.ErrorBroker.addDestination(ErrorBroker.java:169)
+	at org.apache.activemq.broker.MutableBrokerFilter.addDestination(MutableBrokerFilter.java:177)
+	at org.apache.activemq.broker.region.RegionBroker.send(RegionBroker.java:462)
+	at org.apache.activemq.broker.jmx.ManagedRegionBroker.send(ManagedRegionBroker.java:297)
+	at org.apache.activemq.advisory.AdvisoryBroker.fireAdvisory(AdvisoryBroker.java:657)
+	at org.apache.activemq.advisory.AdvisoryBroker.fireConsumerAdvisory(AdvisoryBroker.java:601)
+	at org.apache.activemq.advisory.AdvisoryBroker.fireConsumerAdvisory(AdvisoryBroker.java:587)
+	at org.apache.activemq.advisory.AdvisoryBroker.removeConsumer(AdvisoryBroker.java:292)
+	at org.apache.activemq.broker.BrokerFilter.removeConsumer(BrokerFilter.java:137)
+	at org.apache.activemq.broker.BrokerFilter.removeConsumer(BrokerFilter.java:137)
+	at org.apache.activemq.broker.MutableBrokerFilter.removeConsumer(MutableBrokerFilter.java:142)
+	at org.apache.activemq.broker.TransportConnection.processRemoveConsumer(TransportConnection.java:703)
+	at org.apache.activemq.broker.TransportConnection.processRemoveSession(TransportConnection.java:742)
+	at org.apache.activemq.broker.TransportConnection.processRemoveConnection(TransportConnection.java:854)
+	at org.apache.activemq.broker.TransportConnection.doStop(TransportConnection.java:1200)
+	at org.apache.activemq.broker.TransportConnection$4.run(TransportConnection.java:1130)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020-05-25 15:20:50,626 WARN [org.apache.activemq.broker.TransportConnection] - Failed to remove consumer: n-9cf3d7e3a6001StaticGatewayBroker->n-9cf3f560fc0aeChariotStaticGatewayBroker-40595-1590147451518-5:1:1:1
+org.apache.activemq.broker.BrokerStoppedException: Broker has been stopped: org.apache.activemq.broker.BrokerService$6@63ddaf18
+	at org.apache.activemq.broker.ErrorBroker.removeConsumer(ErrorBroker.java:184)
+	at org.apache.activemq.broker.MutableBrokerFilter.removeConsumer(MutableBrokerFilter.java:142)
+	at org.apache.activemq.broker.TransportConnection.processRemoveConsumer(TransportConnection.java:703)
+	at org.apache.activemq.broker.TransportConnection.processRemoveSession(TransportConnection.java:742)
+	at org.apache.activemq.broker.TransportConnection.processRemoveConnection(TransportConnection.java:854)
+	at org.apache.activemq.broker.TransportConnection.doStop(TransportConnection.java:1200)
+	at org.apache.activemq.broker.TransportConnection$4.run(TransportConnection.java:1130)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020-05-25 15:20:50,626 WARN [org.apache.activemq.broker.TransportConnection] - Failed to remove consumer: n-9cf3d7e3a6001StaticGatewayBroker->n-9cf3f560fc0aeChariotStaticGatewayBroker-40595-1590147451518-5:1:1:4
+org.apache.activemq.broker.BrokerStoppedException: Broker has been stopped: org.apache.activemq.broker.BrokerService$6@63ddaf18
+	at org.apache.activemq.broker.ErrorBroker.removeConsumer(ErrorBroker.java:184)
+	at org.apache.activemq.broker.MutableBrokerFilter.removeConsumer(MutableBrokerFilter.java:142)
+	at org.apache.activemq.broker.TransportConnection.processRemoveConsumer(TransportConnection.java:703)
+	at org.apache.activemq.broker.TransportConnection.processRemoveSession(TransportConnection.java:742)
+	at org.apache.activemq.broker.TransportConnection.processRemoveConnection(TransportConnection.java:854)
+	at org.apache.activemq.broker.TransportConnection.doStop(TransportConnection.java:1200)
+	at org.apache.activemq.broker.TransportConnection$4.run(TransportConnection.java:1130)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020-05-25 15:20:50,626 WARN [org.apache.activemq.broker.TransportConnection.Service] - Failed to remove session n-9cf3d7e3a6001StaticGatewayBroker->n-9cf3f560fc0aeChariotStaticGatewayBroker-40595-1590147451518-5:1:1
+org.apache.activemq.broker.BrokerStoppedException: Broker has been stopped: org.apache.activemq.broker.BrokerService$6@63ddaf18
+	at org.apache.activemq.broker.ErrorBroker.removeSession(ErrorBroker.java:114)
+	at org.apache.activemq.broker.MutableBrokerFilter.removeSession(MutableBrokerFilter.java:207)
+	at org.apache.activemq.broker.TransportConnection.processRemoveSession(TransportConnection.java:755)
+	at org.apache.activemq.broker.TransportConnection.processRemoveConnection(TransportConnection.java:854)
+	at org.apache.activemq.broker.TransportConnection.doStop(TransportConnection.java:1200)
+	at org.apache.activemq.broker.TransportConnection$4.run(TransportConnection.java:1130)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020-05-25 15:20:50,626 WARN [org.apache.activemq.broker.TransportConnection.Service] - Failed to remove session n-9cf3d7e3a6001StaticGatewayBroker->n-9cf3f560fc0aeChariotStaticGatewayBroker-40595-1590147451518-5:1:-1
+org.apache.activemq.broker.BrokerStoppedException: Broker has been stopped: org.apache.activemq.broker.BrokerService$6@63ddaf18
+	at org.apache.activemq.broker.ErrorBroker.removeSession(ErrorBroker.java:114)
+	at org.apache.activemq.broker.MutableBrokerFilter.removeSession(MutableBrokerFilter.java:207)
+	at org.apache.activemq.broker.TransportConnection.processRemoveSession(TransportConnection.java:755)
+	at org.apache.activemq.broker.TransportConnection.processRemoveConnection(TransportConnection.java:854)
+	at org.apache.activemq.broker.TransportConnection.doStop(TransportConnection.java:1200)
+	at org.apache.activemq.broker.TransportConnection$4.run(TransportConnection.java:1130)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020-05-25 15:20:50,628 WARN [org.apache.activemq.broker.TransportConnection.Service] - Failed to remove connection ConnectionInfo {commandId = 1, responseRequired = true, connectionId = n-9cf3d7e3a6001StaticGatewayBroker->n-9cf3f560fc0aeChariotStaticGatewayBroker-40595-1590147451518-5:1, clientId = NC_n-9cf3f560fc0aeChariotStaticGatewayBroker_inbound_n-9cf3d7e3a6001StaticGatewayBroker, clientIp = vm://n-9cf3d7e3a6001StaticGatewayBroker#2, userName = null, password = *****, brokerPath = null, brokerMasterConnector = false, manageable = false, clientMaster = true, faultTolerant = false, failoverReconnect = false}
+org.apache.activemq.broker.BrokerStoppedException: Broker has been stopped: org.apache.activemq.broker.BrokerService$6@63ddaf18
+	at org.apache.activemq.broker.ErrorBroker.removeConnection(ErrorBroker.java:104)
+	at org.apache.activemq.broker.MutableBrokerFilter.removeConnection(MutableBrokerFilter.java:137)
+	at org.apache.activemq.broker.TransportConnection.processRemoveConnection(TransportConnection.java:870)
+	at org.apache.activemq.broker.TransportConnection.doStop(TransportConnection.java:1200)
+	at org.apache.activemq.broker.TransportConnection$4.run(TransportConnection.java:1130)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020-05-25 15:21:29,888 WARN [org.apache.activemq.broker.BrokerService] - Temporary Store limit is 51200 mb (current temporary store usage is 0 mb). The temporary data directory: /home/chariot-admin/gatewaynode only has 7417 mb of usable space - resetting to maximum available disk space: 7417 mb
