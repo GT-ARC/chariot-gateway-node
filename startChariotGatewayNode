@@ -42,7 +42,7 @@ echo "Staring agent"
 
 if ! screen -list | grep -q "chariotGatewayNode"; then
   echo "    chariotGatewayNode started"
-  screen -S chariotGatewayNode -d -m ./target/appassembler/bin/GatewayNode
+  screen -S chariotGatewayNode -d -m ./target/appassembler/bin/startGatewayNode
 else
   echo "    The Chariot Monitoring Agent is already running."
   echo "    Try: screen -r chariotGatewayNode"
