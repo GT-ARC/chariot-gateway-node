@@ -117,7 +117,7 @@ if $cygwin; then
   [ -n "$REPO" ] && REPO=`cygpath --path --windows "$REPO"`
 fi
 
-exec "$JAVACMD" $JAVA_OPTS -Xms512m -XmX1024m \
+exec "$JAVACMD" $JAVA_OPTS -Xms512m -Xmx1024m \
   -classpath "$CLASSPATH" \
   -Dapp.name="GatewayNode" \
   -Dapp.pid="$$" \

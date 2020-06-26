@@ -1,0 +1,10 @@
+#!/bin/bash
+
+if screen -list | grep -q "chariotGatewayNode"; then
+  screen -ls | grep -E "chariotGatewayNode" | cut -d. -f1 | awk '{print }' | xargs kill 2> /dev/null
+    echo "Chariot gateway node stopped."
+else
+  echo "Chariot gateway node isn't running."
+fi
+
+
