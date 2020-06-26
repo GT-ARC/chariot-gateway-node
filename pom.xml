@@ -64,7 +64,7 @@
 							<copyConfigurationDirectory>true</copyConfigurationDirectory>
 							<programs>
 								<program>
-									<name>GatewayNode</name>
+									<name>startGatewayNode</name>
 									<mainClass>de.gtarc.gatewaynode.GatewayNodeStarter</mainClass>
 								</program>
 							</programs>
